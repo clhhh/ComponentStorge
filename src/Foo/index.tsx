@@ -12,7 +12,9 @@ import React,{useState} from 'react';
 // </div>
 // ) ;
 
-const demo=({midtitle1, title1})=>{
+// const demo=({midtitle1, title1})=>{
+const demo=(props:any)=>{
+    const {title1,midtitle1}=props
     const [close, setClose] = useState(true)
     
 return(

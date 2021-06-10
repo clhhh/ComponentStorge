@@ -30,13 +30,7 @@ export const Button: FC<ButtonProps> = props => {
     [`btn-${size}`]: size,
     disabled: btnType === 'link' && disabled,
   });
-  if (btnType === 'link' && href) {
-    return (
-      <a className={classes} href={href} {...restProps}>
-        {children}
-      </a>
-    );
-  }
+  
   return (
     <button className={classes} disabled={disabled} {...restProps} type="button">
       {children}
