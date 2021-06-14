@@ -10,7 +10,7 @@
   .menu-vertical {
     flex-direction: column;
     border-bottom: 0px;
-    margin: 10px 20px;
+    margin: 15px 20px;
     border-right: 1px solid #dee2e6;
   }
   .chicken-design-menu > .menu-item {
@@ -27,3 +27,18 @@
     pointer-events: none;
     cursor: default;
   }
+  .chicken-design-menu .submenu-item {
+    position: relative;
+  }
+  .chicken-design-menu .submenu-item .submenu-title {
+    display: flex;
+    align-items: center;
+  }
+  .chicken-design-menu .submenu-item .arrow-icon {
+    transition: transform 0.25s ease-in-out;
+    margin-left: 3px;
+  }
+  .chicken-design-menu .submenu-item:hover .arrow-icon {
+    transform: rotate(180deg);
+  }
+  

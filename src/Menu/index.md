@@ -81,3 +81,28 @@ export default () => (
   </div>
 );
 ```
+### API
+
+#### Menu
+| 属性 | 说明     | 类型                                         | 默认值 |
+| ---- | -------- | -------------------------------------------- | ------ |
+| defaultIndex | 默认active的索引 | number | 0 |
+| className | 组件类名 |   string   |   - |
+| mode  | 菜单类型横项或者纵向 | oneOf "horizontal" | "vertical" | horizonta | 
+| onSelect | 	点击菜单项触发的回掉函数 | function | false |
+| defaultOpenSubMenus | 	设置子菜单的默认打开 只在纵向模式下生效 | string[默认打开的索引数组] | - |   
+
+
+#### MenuItem
+| 属性 | 说明     | 类型                                         | 默认值 |
+| ---- | -------- | -------------------------------------------- | ------ |
+| disabled| 选项是否被禁用 | boolean | false |
+| className | 组件类名 |   string   |   - |
+| style | css |  |  | 
+
+#### SubMenu
+| 属性 | 说明     | 类型                                         | 默认值 |
+| ---- | -------- | -------------------------------------------- | ------ |
+| title | 名称 | string | - |
+| className | 组件类名 |   string   |   - |
+| style | css |  |  | 
