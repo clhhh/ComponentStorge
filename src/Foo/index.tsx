@@ -22,7 +22,7 @@ return(
     <div>
     <div >
         <h1>{title1} </h1>
-        <h1>{title1} </h1>
+        
         <h2>{midtitle1} </h2> 
         <span  onClick={() => setClose(false)}>点击我就消失了</span>  
     </div>
